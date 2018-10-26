@@ -14,5 +14,6 @@
   * aws ec2 describe-instances --output json
   * aws ec2 run-instances --image-id  ami....... --count 2 --instance-type t2.micro --key-name ......  --security-groups .......
   *  aws ec2 describe-instances | grep InstanceId
-
+  * aws ec2 create-key-pair --key-name MyKeyPair --query 'KeyMaterial' --output text > MyKeyPair.pem
+  * aws ec2 run-instances --image-id ami-8c1be5f6 --instance-type t2.micro --key-name MyKeyPair
 
